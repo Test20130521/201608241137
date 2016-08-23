@@ -7,7 +7,7 @@ namespace FowlerDependencyInjection
     {
         static void Main()
         {
-            var movies = new MovieLister().MoviesDirectedBy("Sergio Leone");
+            var movies = Assembler.CreateMovieLister().MoviesDirectedBy("Sergio Leone");
             Assert.AreEqual("Once Upon a Time in the West", movies.First().Title);
         }
     }
