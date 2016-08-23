@@ -9,7 +9,8 @@ namespace FowlerDependencyInjection
 
         public MovieLister()
         {
-            finder = new ColonDelimitedMovieFinder("movies1.txt");
+            IMovieFinder movieFinder = new ColonDelimitedMovieFinder("movies1.txt");
+            finder = movieFinder;
         }
 
         public IEnumerable<Movie> MoviesDirectedBy(string arg)
