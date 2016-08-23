@@ -4,7 +4,12 @@
     {
         public static MovieLister CreateMovieLister()
         {
-            return new MovieLister(new ColonDelimitedMovieFinder("movies1.txt"));
+            return new MovieLister(CreateMovieFinder());
+        }
+
+        private static IMovieFinder CreateMovieFinder()
+        {
+            return new ColonDelimitedMovieFinder("movies1.txt");
         }
     }
 }
