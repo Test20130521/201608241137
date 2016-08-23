@@ -4,7 +4,7 @@
     {
         public static MovieLister CreateMovieLister()
         {
-            return new MovieLister();
+            return new MovieLister(new ColonDelimitedMovieFinder("movies1.txt"));
         }
     }
 }
