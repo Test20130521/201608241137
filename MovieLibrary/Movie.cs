@@ -1,6 +1,6 @@
-﻿namespace FowlerDependencyInjection
+﻿namespace MovieLibrary
 {
-    class Movie
+    public class Movie
     {
         public string Director { get; set; }
 

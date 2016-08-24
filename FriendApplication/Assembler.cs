@@ -1,6 +1,6 @@
 ﻿using MovieLibrary;
 
-namespace FowlerDependencyInjection
+namespace FriendApplication
 {
     class Assembler
     {
@@ -11,7 +11,7 @@ namespace FowlerDependencyInjection
 
         private static IMovieFinder CreateMovieFinder()
         {
-            return new ColonDelimitedMovieFinder("movies1.txt");
+            return new FriendMovieFinder();
         }
     }
 }

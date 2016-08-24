@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace FowlerDependencyInjection
+namespace MovieLibrary
 {
-    class MovieLister
+    public class MovieLister
     {
         private readonly IMovieFinder finder;
 

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace FowlerDependencyInjection
+namespace MovieLibrary
 {
-    interface IMovieFinder
+    public interface IMovieFinder
     {
         IEnumerable<Movie> FindAll();
     }
